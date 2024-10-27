@@ -1,0 +1,123 @@
+.search-container-shimmer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.search-input-shimmer {
+  width: 60%;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  position: relative;
+  overflow: hidden;
+}
+
+.search-btn-shimmer {
+  padding: 12px 25px;
+  border-radius: 25px;
+  background-color: #e0e0e0;
+  color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+      background-position: -200px 0;
+  }
+  100% {
+      background-position: 200px 0;
+  }
+}
+
+/* Apply shimmer effect */
+.search-input-shimmer, .search-btn-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 400px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Optional shimmer skeleton elements (if you want to add some variety) */
+.shimmer-line {
+  height: 20px;
+  width: 100%;
+  background-color: #e0e0e0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .shimmer-card {
+    width: 300px;
+    padding: 10px;
+    background-color: #f6f7f8;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    margin: 50px;
+  }
+  
+  .shimmer-image {
+    width: 100%;
+    height: 200px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .shimmer-content {
+    width: 100%;
+  }
+  
+  .shimmer-line {
+    height: 25px;
+    background-color: #e0e0e0;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+  .shimmer-line-heading{
+    width:75%;
+    margin-left: 12.5%;
+  }
+  .shimmer-line-short {
+    width: 20%;
+  }
+  
+  .shimmer-line-long {
+    width: 80%;
+  }
+  
+  .shimmer-line-medium {
+    width: 60%;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200px 0;
+    }
+    100% {
+      background-position: 200px 0;
+    }
+  }
+  
+  .shimmer-line, .shimmer-image {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 400px 100%;
+    animation: shimmer 1.5s infinite;
+  }
+  
