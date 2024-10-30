@@ -1,8 +1,10 @@
-import { RestaurantList } from "../Config";
+import { RestaurantCard } from "../Config";
 import Shimmer from "./Shimmer";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
 import UserContext from "../utils/UserContext";
+
 const Body = () => {
   const [searchText, setSearchText] = useState([]);
   const [restaurants, setAllRestaurants] = useState([]);
@@ -83,10 +85,10 @@ const Body = () => {
         ) : (
           filteredRestaurants.map((restaurant) => {
             return (
-              <RestaurantCard
+              <Link to={"/restaurant/"+restaurant.info.id} 
+              key={restaurant.info.id}><RestaurantCard
                 restaurant={restaurant}
-                key={restaurant.info.id}
-              />
+              /></Link>
             );
           })
         )}
