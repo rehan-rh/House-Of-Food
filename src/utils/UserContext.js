@@ -6,4 +6,4 @@ const UserContext = createContext({
         email:"dummy@gmail.com",
     },
 });
- export default UserContext;
+export default UserContext;
