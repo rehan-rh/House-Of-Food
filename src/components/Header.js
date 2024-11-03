@@ -9,7 +9,7 @@ const LoggedInUser = () => {
 const Title = () => {
   return (
     <Link to="/">
-      <img className="h-24" alt="logo" src={Logo} />
+      <img data-testid="logo" className="h-24" alt="logo" src={Logo} />
     </Link>
   );
 };
@@ -35,7 +35,7 @@ const Header = () => {
             <li>Contact</li>
           </Link>
           <Link to="/cart" className="p-3">
-            <li>Carts-{cartItems.length}</li>
+            <li data-testid="cart">Carts-{cartItems.length}</li>
           </Link>
           
         </ul>

@@ -3,3 +3,4 @@ dist/
 *.class
 *.py[cod]
 .parcel-cache/
+/coverage

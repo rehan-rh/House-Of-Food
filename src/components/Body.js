@@ -1,4 +1,3 @@
-import { RestaurantCard } from "../Config";
 import Shimmer from "./Shimmer";
 import RestaurantCard from "./RestaurantCard";
 import { Link } from "react-router-dom";
@@ -52,11 +51,13 @@ const Body = () => {
           
         />
         <button
+          data-testid="search-btn"
           className="bg-green-300 p-2 m-4 rounded-lg"
           onClick={() => {
             const data = filterData(searchText, restaurants);
             setFilteredRestaurants(data);
           }}
+          
         >
           Search
         </button>
